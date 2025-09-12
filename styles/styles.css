@@ -16,7 +16,7 @@ aside img {
     width: 200px;
     height: auto;
     border: 1px solid black;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0px 0px 30px gray;
 }
 
 main img {
