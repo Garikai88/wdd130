@@ -100,8 +100,12 @@ nav a:hover,
   border-radius: 8px;
 }
 
-.article img {
-  align-items: center;
+.hero article img {
+  float: center;
+  margin: 0 0 1rem 1rem;
+  max-width: 45%;
+  height: auto;
+  border-radius: 8px;
 }
 
 article h2,
