@@ -100,14 +100,6 @@ nav a:hover,
   border-radius: 8px;
 }
 
-.hero article img {
-  float: center;
-  margin: 0 0 1rem 1rem;
-  max-width: 45%;
-  height: auto;
-  border-radius: 8px;
-}
-
 article h2,
 section h2 {
   font-size: 1.8rem;
