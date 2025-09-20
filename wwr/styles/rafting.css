@@ -103,6 +103,15 @@ nav a:hover,
   border-radius: 8px;
 }
 
+.client-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  display: block;
+  border-radius: 8px;
+}
+
+
 article h2,
 section h2 {
   font-size: 1.8rem;
