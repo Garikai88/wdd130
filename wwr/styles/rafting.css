@@ -100,6 +100,10 @@ nav a:hover,
   border-radius: 8px;
 }
 
+.article img {
+  align-items: center;
+}
+
 article h2,
 section h2 {
   font-size: 1.8rem;
