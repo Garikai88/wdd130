@@ -45,12 +45,12 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: #007BFF; /* Blue */
+    color: #007BFF; 
 }
 
 nav a:visited {
     text-decoration: none;
-    color: #6f42c1; /* Purple for visited links */
+    color: #6f42c1; 
 }
 
 nav a:hover {
