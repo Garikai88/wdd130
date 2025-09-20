@@ -94,6 +94,13 @@ nav a:hover {
     border-radius: 8px;
 }
 
+article h2 {
+    font-size: 1.8rem;
+    color: #0A2239;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
 .hero article,
 .hero p {
     color: #fff;
