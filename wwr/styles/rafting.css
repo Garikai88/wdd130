@@ -236,7 +236,6 @@ nav a:hover,
   cursor: pointer;
   font-weight: bold;
   margin-top: 20px;
-  width: fit-content;
   width: 100%;
 }
 
@@ -316,7 +315,6 @@ nav a:hover,
   align-items: flex-start;
   margin-bottom: 20px;
 }
-
 
 .option-box {
 display: flex;
@@ -616,7 +614,7 @@ border-radius: 8px;
 cursor: pointer;
 width: 100%;
 transition: background-color 0.3s ease, transform 0.2s ease;
-box-shadow: 0 4 10px rgba(0, 0, 0, 0.15);
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 text-transform: uppercase;
 letter-spacing: 0.5px;
 }
