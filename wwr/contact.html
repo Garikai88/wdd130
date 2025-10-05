@@ -39,13 +39,15 @@
         <section class="map-section">
             <h2>Find Us</h2>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=..." loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="350" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+        </section>
+
+        <section class="contact-form-section">
             <div class="contact-form">
                 <h2>Get in Touch</h2>
-                <form action="/form-action" method="post">
+                <form action="form-action" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
 
@@ -58,32 +60,50 @@
                         <option value="reservation">Reservation</option>
                     </select>
 
+                    <fieldset>
+                        <legend>Preferred Contact Metod:</legend>
+                        <input type="radio" id="contact-phone" name="contact-method" value="phone" required>
+                        <label for="contact-phone">Phone</label>
+
+                        <input type="radio" id="contact-email" name="contact-method" value="email">
+                        <label for="contact-email">Email</label>
+
+                        <input type="radio" id="contact-chat" name="contact-method" value="chat">
+                        <label for="contact-chat">Chat</label>
+                    </fieldset>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your message here...."></textarea>
+
                     <input type="checkbox" id="subscribe" name="subscribe">
                     <label for="subscribe">Please subscribe me to the monthly newsletter:</label>
 
                     <button type="submit" class="submit-button">Get In Touch!</button>
                 </form>
+            </div>
+        </section>
 
-                <section class="teams">
-                    <h2>We Are Here To Serve You</h2>
-                    <div class="profiles">
-                        <div class="profile">
-                            <img src="images/zach.jpg" alt="Zach Collins">
-                            <h3>Zach Collins</h3>
-                            <p>Lead Guide</p>
-                        </div>
-                        <div class="profile">
-                            <img src="images/wesley.jpg" alt="Wesley Myers">
-                            <h3>Wesley Myers</h3>
-                            <p>Manager</p>
-                        </div>
-                        <div class="profile">
-                            <img src="images/ben.jpg" alt="Ben Ritz">
-                            <h3>Ben Ritz</h3>
-                            <p>Trip Coordinator</p>
-                        </div>
-                    </div>
-                </section>
+
+        <section class="teams">
+            <h2>We Are Here To Serve You</h2>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="images/zach.jpg" alt="Zach Collins">
+                    <h3>Zach Collins</h3>
+                    <p>Lead Guide</p>
+                </div>
+                <div class="profile">
+                    <img src="images/wesley.jpg" alt="Wesley Myers">
+                    <h3>Wesley Myers</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="profile">
+                    <img src="images/ben.jpg" alt="Ben Ritz">
+                    <h3>Ben Ritz</h3>
+                    <p>Trip Coordinator</p>
+                </div>
+            </div>
+        </section>
     </main>
 
 
