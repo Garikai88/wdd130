@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Nyami Nyami Rafting mission and adventure page.">
+    <meta name="author" content="Garikai">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/rafting.css">
     <title>Contact Us | White Water Rafting</title>
@@ -25,82 +27,84 @@
         </div>
     </header>
 
+    <main>
+        <section class="company-info">
+            <h1>White Water Rafting Company</h1>
+            <p>123 Main River Street</p>
+            <p><strong>Kolob, California</strong></p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </section>
 
-    <section class="company-info">
-        <h1>White Water Rafting Company</h1>
-        <p>123 Main River Street</p>
-        <p><strong>Kolob, California</strong></p>
-        <p>+1 999 999 9999</p>
-        <p>info@whitewater.com</p>
-    </section>
+        <section class="map-section">
+            <h2>Find Us</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=..." loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="#" method="post" aria-label="contact form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <fieldset class="purpose-section">
+                        <legend>Message Purpose</legend>
 
-    <section class="map-section">
-        <h2>Find Us</h2>
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=..." style="width: 100%; height: 450px; border: 0;"
-                loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-        <div class="contact-form">
-            <h2>Get in Touch</h2>
-            <form action="#" method="post" aria-label="contact form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-                <fieldset class="purpose-section">
-                    <legend>Message Purpose</legend>
+                        <label class="option-box">
+                            <input type="radio" name="purpose" value="general" required>
+                            <span>General Inquiry</span>
+                        </label>
 
-                    <label class="option-box">
-                        <input type="radio" name="purpose" value="general" required>
-                        <span>General Inquiry</span>
+                        <label class="option-box">
+                            <input type="radio" name="purpose" value="reservation">
+                            <span>Reservation Questions</span>
+                        </label>
+
+                        <label class="option-box">
+                            <input type="radio" name="purpose" value="suggestion">
+                            <span>Website Suggestion</span>
+                        </label>
+                    </fieldset>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label class="newsletter-label">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter.
                     </label>
 
-                    <label class="option-box">
-                        <input type="radio" name="purpose" value="reservation">
-                        <span>Reservation Questions</span>
-                    </label>
-
-                    <label class="option-box">
-                        <input type="radio" name="purpose" value="suggestion">
-                        <span>Website Suggestion</span>
-                    </label>
-                </fieldset>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <label class="newsletter-label">
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    Please subscribe me to the monthly newsletter.
-                </label>
-
-                <button type="submit">Get in Touch!</button>
-            </form>
-        </div>
-
-    </section>
-
-    <section class="teams">
-        <h2>We Are Here To Serve You</h2>
-        <div class="profiles">
-            <div class="profile">
-                <img src="images/zach.jpg" alt="Zach Collins">
-                <h3>Zach Collins</h3>
-                <p>Lead Guide</p>
+                    <button type="submit">Get in Touch!</button>
+                </form>
             </div>
-            <div class="profile">
-                <img src="images/wesley.jpg" alt="Wesley Myers">
-                <h3>Wesley Myers</h3>
-                <p>Manager</p>
+        </section>
+
+
+
+        <section class="teams">
+            <h2>We Are Here To Serve You</h2>
+            <div class="profiles">
+                <div class="profile">
+                    <img src="images/zach.jpg" alt="Zach Collins">
+                    <h3>Zach Collins</h3>
+                    <p>Lead Guide</p>
+                </div>
+                <div class="profile">
+                    <img src="images/wesley.jpg" alt="Wesley Myers">
+                    <h3>Wesley Myers</h3>
+                    <p>Manager</p>
+                </div>
+                <div class="profile">
+                    <img src="images/ben.jpg" alt="Ben Ritz">
+                    <h3>Ben Ritz</h3>
+                    <p>Trip Coordinator</p>
+                </div>
             </div>
-            <div class="profile">
-                <img src="images/ben.jpg" alt="Ben Ritz">
-                <h3>Ben Ritz</h3>
-                <p>Trip Coordinator</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
 
 
