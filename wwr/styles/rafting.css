@@ -394,7 +394,7 @@ textarea {
   width: 100%;
   transition: background-color 0.3s ease, transform 0.2s ease;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  text-decoration: uppercase;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 

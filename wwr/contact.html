@@ -45,65 +45,45 @@
             </div>
             <div class="contact-form">
                 <h2>Get in Touch</h2>
-                <form action="#" method="post" aria-label="contact form">
+                <form action="/form-action" method="post">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
-                    <fieldset class="purpose-section">
-                        <legend>Message Purpose</legend>
 
-                        <label class="option-box">
-                            <input type="radio" name="purpose" value="general" required>
-                            <span>General Inquiry</span>
-                        </label>
+                    <label for="purpose">Purpose:</label>
+                    <select id="purpose" name="purpose">
+                        <option value="general">General Inquiry</option>
+                        <option value="reservation">Reservation</option>
+                    </select>
 
-                        <label class="option-box">
-                            <input type="radio" name="purpose" value="reservation">
-                            <span>Reservation Questions</span>
-                        </label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter:</label>
 
-                        <label class="option-box">
-                            <input type="radio" name="purpose" value="suggestion">
-                            <span>Website Suggestion</span>
-                        </label>
-                    </fieldset>
-
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-
-                    <label class="newsletter-label">
-                        <input type="checkbox" id="subscribe" name="subscribe">
-                        Please subscribe me to the monthly newsletter.
-                    </label>
-
-                    <button type="submit">Get in Touch!</button>
+                    <button type="submit" class="submit-button">Get In Touch!</button>
                 </form>
-            </div>
-        </section>
 
-
-
-        <section class="teams">
-            <h2>We Are Here To Serve You</h2>
-            <div class="profiles">
-                <div class="profile">
-                    <img src="images/zach.jpg" alt="Zach Collins">
-                    <h3>Zach Collins</h3>
-                    <p>Lead Guide</p>
-                </div>
-                <div class="profile">
-                    <img src="images/wesley.jpg" alt="Wesley Myers">
-                    <h3>Wesley Myers</h3>
-                    <p>Manager</p>
-                </div>
-                <div class="profile">
-                    <img src="images/ben.jpg" alt="Ben Ritz">
-                    <h3>Ben Ritz</h3>
-                    <p>Trip Coordinator</p>
-                </div>
-            </div>
-        </section>
+                <section class="teams">
+                    <h2>We Are Here To Serve You</h2>
+                    <div class="profiles">
+                        <div class="profile">
+                            <img src="images/zach.jpg" alt="Zach Collins">
+                            <h3>Zach Collins</h3>
+                            <p>Lead Guide</p>
+                        </div>
+                        <div class="profile">
+                            <img src="images/wesley.jpg" alt="Wesley Myers">
+                            <h3>Wesley Myers</h3>
+                            <p>Manager</p>
+                        </div>
+                        <div class="profile">
+                            <img src="images/ben.jpg" alt="Ben Ritz">
+                            <h3>Ben Ritz</h3>
+                            <p>Trip Coordinator</p>
+                        </div>
+                    </div>
+                </section>
     </main>
 
 
