@@ -84,12 +84,47 @@ nav a:hover, nav-bar a:hover, .vertical-nav li a:hover {
   border-bottom: 2px solid var(--secondary-color);
 }
 
+/* Home page grid*/
+.homepage-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Offering Grid: Multi-column Layout */
+.offering-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax (280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f0f8ff;
+}
+
+.offering {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.offering img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+}
+
+.hero article.mission {
+  z-index: 2;
 }
 
 .hero img {
@@ -105,6 +140,10 @@ nav a:hover, nav-bar a:hover, .vertical-nav li a:hover {
   transform: translate(-50%, -50%);
   font-size: 2rem;
   color: #ffcc00;
+  background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
   z-index: 2;
 }
 
@@ -113,6 +152,16 @@ nav a:hover, nav-bar a:hover, .vertical-nav li a:hover {
   text-align: justify;
   color: var(--text-color);
 } 
+
+.hero-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcc00;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
 
 .hero article .mission {
   position: absolute;
@@ -291,6 +340,58 @@ figcaption {
   color: #777;
 }
 
+/* Newsletter Form*/
+.newsletter {
+  background-color: #f9f9ff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  text-align: center;
+}
+
+.newsletter h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color:#0077cc;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter label {
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+}
+
+.newletter input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.newsletter button {
+  padding: 0.75;
+  font-size: 1rem;
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.newsletter button:hover {
+  background-color: #e6b800;
+}
+
+
 /* Contact & Forms */
 .company-info {
   text-align: center;
@@ -326,7 +427,8 @@ figcaption {
   margin-bottom: 10px;
 }
 
-.map {
+.map-section {
+  align-items: center;
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -488,6 +590,184 @@ button[type="submit"]:hover {
 
 .newsletter-label input[type="checkbox"] {
   margin: 0;
+}
+
+/* Call to Action */
+.call-to-action {
+  background-color: #0077cc;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 800px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.call-to-action h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;  
+}
+
+.call-to-action p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #0077cc;
+  color: #ffffff; /* high contrast */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+}
+
+/* Trips Grid*/
+.trips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.cta-contact {
+  text-align: center;
+  background-color: #0077cc;
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcc00;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.trip-card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.trip-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.trip-table-section {
+  overflow-x: auto;
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9f9ff;
+}
+
+.trip-table th, 
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.trip-table th {
+  background-color: #0077cc;
+  color: white;
+}
+
+/* Offerings */
+.offerings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #f0f8ff;
+}
+
+.offering {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.offering img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.offering h3 {
+  color: #0077cc;
+  margin-bottom: 0.5rem;
+}
+
+.offering p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Cta-contact*/ 
+.cta-contact {
+  background-color: linear-gradient(135deg, #0077cc, #004c99 );
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-top: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  animation: fadeInUp 1s ease-out;
+}
+
+.cta-contact h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-contact p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ffcc00;
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
 }
 
 /* Social Icons */
